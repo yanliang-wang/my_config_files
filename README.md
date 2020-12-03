@@ -1,6 +1,6 @@
 These are my config files.
 
-@[toc]
+[toc]
 
 # my_config_files
 
