@@ -1,5 +1,7 @@
 These are my config files.
 
+@[toc]
+
 # my_config_files
 
 
