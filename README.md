@@ -15,6 +15,8 @@ It's my clion settings
 open clion --> File --> improt setting 
 Select the .zip file and open it.
 
+**Note**: It's also nice to use default theme  and `sublime text` keymap. 
+
 ## 2. rvctools.zip
 
 It's a MATLAB robotics toolbox.
