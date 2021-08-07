@@ -98,8 +98,11 @@ alias cmall='catkin_make -DCATKIN_WHITELIST_PACKAGES=""'
 alias refresh='watch -n 0.5 -d'
 alias ins='sudo apt-get install'
 
-CZ_INIT_SCRIPT='var p=require("./package.json");p.config=p.config||{};p.config.ghooks={"commit-msg":"validate-commit-msg"};p.scripts=p.scripts||{};p.scripts.changelog="conventional-changelog -p angular -i CHANGELOG.md -s -r 0";require("fs").writeFileSync("./package.json",JSON.stringify(p,null,2)+require("os").EOL);'
-alias cz_init="npm init && commitizen init cz-conventional-changelog --save-dev --save-exact && node -e '$CZ_INIT_SCRIPT'"
+CZ_INIT_SCRIPT='var p=require("./package.json");p.config=p.config||{};p.version="0.0.0";p.config.ghooks={"commit-msg":"validate-commit-msg"};p.scripts=p.scripts||{};p.scripts.changelog="conventional-changelog -p angular -i CHANGELOG.md -s -r 0 -u";p.scripts.release="release-it --npm.skipChecks --no-git.requireCleanWorkingDir --no-publish --no-git.push --no-git.commit";require("fs").writeFileSync("./package.json",JSON.stringify(p,null,2)+require("os").EOL);'
+# alias cz_init="npm init && commitizen init cz-conventional-changelog --save-dev --save-exact && node -e '$CZ_INIT_SCRIPT'"
+alias cz_init="npm init -y && node -e '$CZ_INIT_SCRIPT'"
+
+alias gcz="git cz"
 #####################################################################
 # open file configure
 #####################################################################
