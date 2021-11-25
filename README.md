@@ -38,6 +38,11 @@ Select the `rvctools` folder
 
 It's my `.zshrc` file with many custom configuration including git, ROS, terminal, etc.
 
+```bash
+sudo apt install fasd
+ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
 ### how to use it
 
 ```bash

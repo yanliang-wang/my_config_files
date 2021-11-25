@@ -47,7 +47,9 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# plugins=(git)
+plugins=(git zsh-syntax-highlighting)
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,6 +87,8 @@ source $ZSH/oh-my-zsh.sh
 #####################################################################
 alias p='proxychains4'
 alias pytorch='conda activate pytorch'
+alias pvrcnn='conda activate pvrcnn'
+alias pr='conda activate pcdet'
 alias tf1.11='conda activate tf1.8'
 alias tf1.10='conda activate tf'
 alias smi='nvidia-smi'
@@ -94,6 +98,7 @@ alias tree2='tree -L 2'
 alias pip2='/usr/bin/pip'
 alias -s pdf='okular'
 alias cm='catkin_make'
+alias cb='catkin build'
 alias cmall='catkin_make -DCATKIN_WHITELIST_PACKAGES=""'
 alias refresh='watch -n 0.5 -d'
 alias ins='sudo apt-get install'
@@ -103,6 +108,8 @@ CZ_INIT_SCRIPT='var p=require("./package.json");p.config=p.config||{};p.version=
 alias cz_init="npm init -y && node -e '$CZ_INIT_SCRIPT'"
 
 alias gcz="git cz"
+alias changelog="npm run changelog"
+alias release="npm run release"
 #####################################################################
 # open file configure
 #####################################################################
@@ -142,7 +149,8 @@ alias openwin='gnome-open'
 #####################################################################
 alias cmakemake='cmake .. && make'
 alias cmakefull='mkdir build && cd build && cmake .. && make'
-
+alias make4='make -j4'
+alias make6='make -j6'
 #####################################################################
 # git cmd configure
 #####################################################################
@@ -168,24 +176,41 @@ source /usr/share/autojump/autojump.zsh
 source /opt/ros/melodic/setup.zsh
 alias echorospath='echo $ROS_PACKAGE_PATH'
 alias sourcerosws='source devel/setup.zsh'
+alias killrosgz='pkill gz && pkill rosmaster'
 # export  TURTLEBOT_BASE=kobuki  
 # export  TURTLEBOT_STACKS=hexagons
 # export  TURTLEBOT_3D_SENSOR=KinectVelodyne
+# export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/wang/wang/git_files/simulation_workspaces/gazebo_maps/common_models
+# export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/wang/wang/git_files/simulation_workspaces/gazebo_maps/height_maze
+# export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/wang/wang/git_files/simulation_workspaces/gazebo_maps/small_maze
+# export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/wang/wang/git_files/simulation_workspaces/gazebo_maps/large_mine_abandoned
+# export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/wang/wang/git_files/simulation_workspaces/gazebo_maps/bounding_wall_world
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/wang/wang/git_nrsl/test/ws_simulation_for_lvi_sam/src/simulation_for_lvi_sam/gazebo_description/common_models
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/wang/wang/git_nrsl/test/ws_simulation_for_lvi_sam/src/simulation_for_lvi_sam/gazebo_description/height_maze
+
+alias run1='source /home/wang/wang/git_nrsl/ws_race/devel/setup.zsh && roslaunch mm_perceive run.launch dev:=1'
+alias run2='source /home/wang/wang/git_nrsl/ws_race/devel/setup.zsh && roslaunch mm_perceive run.launch dev:=2'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/home/wang/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/home/wang/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/home/wang/anaconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/home/wang/anaconda3/bin:$PATH"
-#     fi
-# fi
 
-# >>> cuda >>>
+__conda_setup="$('/home/wang/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/wang/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/wang/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/wang/anaconda3/bin:$PATH"
+    fi
+fi
+conda deactivate
+
+# >>> cuda11.2 >>>
+export PATH=/usr/local/cuda-11.2/bin${PATH:+:$PATH}} 
+export LD_LIBRARY_PATH=/usr/local/cuda-11.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+# >>> cuda10.1 >>>
 # export PATH=/usr/local/cuda-10.1/bin${PATH:+:$PATH}} 
 # export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
@@ -197,3 +222,5 @@ export LD_PATH_LIB=/opt/ros/melodic/lib
 # >>> ros workspace for public pkg >>>
 # source /home/wang/catkin_ws/devel/setup.zsh
 
+# pr
+# export LDFLAGS="-fno-lto"
