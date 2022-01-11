@@ -61,8 +61,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+# if [[ -n $SSH_CONNECTION ]]; then#   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -87,8 +86,8 @@ source $ZSH/oh-my-zsh.sh
 #####################################################################
 alias p='proxychains4'
 alias pytorch='conda activate pytorch'
-alias pvrcnn='conda activate pvrcnn'
-alias pr='conda activate pcdet'
+alias base='conda activate base'
+alias openpcdet='conda activate openpcdet'
 alias tf1.11='conda activate tf1.8'
 alias tf1.10='conda activate tf'
 alias smi='nvidia-smi'
@@ -102,6 +101,10 @@ alias cb='catkin build'
 alias cmall='catkin_make -DCATKIN_WHITELIST_PACKAGES=""'
 alias refresh='watch -n 0.5 -d'
 alias ins='sudo apt-get install'
+alias doxgui='doxywizard'
+alias jn='jupyter notebook'
+alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5 --right-of HDMI-0 --auto' # 初始屏幕
+alias di='sudo dpkg -i'
 
 CZ_INIT_SCRIPT='var p=require("./package.json");p.config=p.config||{};p.version="0.0.0";p.config.ghooks={"commit-msg":"validate-commit-msg"};p.scripts=p.scripts||{};p.scripts.changelog="conventional-changelog -p angular -i CHANGELOG.md -s -r 0 -u";p.scripts.release="release-it --npm.skipChecks --no-git.requireCleanWorkingDir --no-publish --no-git.push --no-git.commit";require("fs").writeFileSync("./package.json",JSON.stringify(p,null,2)+require("os").EOL);'
 # alias cz_init="npm init && commitizen init cz-conventional-changelog --save-dev --save-exact && node -e '$CZ_INIT_SCRIPT'"
@@ -160,6 +163,7 @@ alias gdiff='git diff'
 alias gcommit='git commit -m'
 alias gadd='git add'
 alias glog='git log --oneline --decorate --graph --all'
+alias gclone='p git clone --recurse-submodules'
 
 #####################################################################
 # zsh configure
@@ -168,6 +172,9 @@ alias sourcezsh='source ~/.zshrc'
 alias geditzsh='gedit ~/.zshrc'
 source /usr/share/autojump/autojump.zsh
 
+# zsh-git-prompt
+# source /home/wang/wang/software/toolkits/zsh-git-prompt/zshrc.sh
+# PROMPT='%B%m%~%b$(git_super_status) %# '
 
 #####################################################################
 # ros configure
@@ -199,9 +206,9 @@ if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
     if [ -f "/home/wang/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/wang/anaconda3/etc/profile.d/conda.sh"
+# . "/home/wang/anaconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
     else
-        export PATH="/home/wang/anaconda3/bin:$PATH"
+# export PATH="/home/wang/anaconda3/bin:$PATH"  # commented out by conda initialize
     fi
 fi
 conda deactivate
