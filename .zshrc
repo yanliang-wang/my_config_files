@@ -105,6 +105,7 @@ alias doxgui='doxywizard'
 alias jn='jupyter notebook'
 alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5 --right-of HDMI-0 --auto' # 初始屏幕
 alias di='sudo dpkg -i'
+alias clion=' nohup sh /home/wang/wang/software/clion-2021.3.2/bin/clion.sh  &'
 
 CZ_INIT_SCRIPT='var p=require("./package.json");p.config=p.config||{};p.version="0.0.0";p.config.ghooks={"commit-msg":"validate-commit-msg"};p.scripts=p.scripts||{};p.scripts.changelog="conventional-changelog -p angular -i CHANGELOG.md -s -r 0 -u";p.scripts.release="release-it --npm.skipChecks --no-git.requireCleanWorkingDir --no-publish --no-git.push --no-git.commit";require("fs").writeFileSync("./package.json",JSON.stringify(p,null,2)+require("os").EOL);'
 # alias cz_init="npm init && commitizen init cz-conventional-changelog --save-dev --save-exact && node -e '$CZ_INIT_SCRIPT'"
@@ -151,7 +152,7 @@ alias openwin='gnome-open'
 # cmake cmd configure
 #####################################################################
 alias cmakemake='cmake .. && make'
-alias cmakefull='mkdir build && cd build && cmake .. && make'
+alias cmakefull='mkdir build && cd build && cmake .. && make -j10'
 alias make4='make -j4'
 alias make6='make -j6'
 #####################################################################
