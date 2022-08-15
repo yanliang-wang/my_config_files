@@ -1,0 +1,42 @@
+set number relativenumber
+
+" keep normal mode when refactor
+set idearefactormode=keep
+
+" shift + j
+set ideajoin
+
+let mapleader=" "
+
+set so=3
+
+set easymotion
+set surround
+
+set NERDTree
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
+
+" key mapping
+" nmap <C-j> :m +1<CR>
+" nmap <C-k> :m -2<CR>
+" vmap <C-j> :m +1<CR>gv
+" vmap <C-k> :m -2<CR>gv
+" imap <C-j> <Esc>:m +1<CR>gi
+" imap <C-k> <Esc>:m -2<CR>gi
+
+
+" vmap <C-j> :m'>+<CR>gv
+" imap <C-j> <Esc>:m+<CR>==gi
+
+" imap <C-k> <Esc>:m-2<CR>==gi
+" vmap <C-k> :m-2<CR>gv
+" nmap <C-j> :m+<CR>==
+" nmap <C-k> :m-2<CR>==
+
+nmap <C-j> :m+<CR>==
+nmap <C-k> :m-2<CR>==
+imap <C-j> <Esc>:m+<CR>==gi
+imap <C-k> <Esc>:m-2<CR>==gi
+vmap <C-j> :m'>+<CR>gv
+vmap <C-k> :m-2<CR>gv
