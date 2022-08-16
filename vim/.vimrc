@@ -101,6 +101,7 @@ let g:NERDTreeMapJumpParent='h'
 nmap <Leader>q :q<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>g :NERDTreeToggle<CR>
+nmap <Leader>t :NERDTree<CR>
 nmap <Leader>f :NERDTreeFind<CR>
 nmap <Leader>n :noh<CR>
 

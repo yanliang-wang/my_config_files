@@ -47,6 +47,7 @@ vmap <s-tab> <gv
 nmap <Leader>q :q<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>g :NERDTreeToggle<CR>
+nmap <Leader>t :NERDTree<CR>
 nmap <Leader>n :noh<CR>
 
 let g:multi_cursor_use_default_mapping=0
