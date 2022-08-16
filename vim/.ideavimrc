@@ -1,42 +1,64 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set number relativenumber
 
 " keep normal mode when refactor
 set idearefactormode=keep
-
+" 中英文切换
+set keep-english-in-normal
+" 搜索高亮
+set hlsearch
+set incsearch
+set showmode
+set de=on
 " shift + j
 set ideajoin
 
 let mapleader=" "
-
 set so=3
 
+" plugins"
 set easymotion
 set surround
-
+set multiple-cursors
+"argument as an object"
+set argtextobj
+"With this plugin lines that only contain whitespace are also matched."
+set vim-paragraph-motion
 set NERDTree
-let g:NERDTreeMapActivateNode='l'
-let g:NERDTreeMapJumpParent='h'
+set textobj-entire
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " key mapping
-" nmap <C-j> :m +1<CR>
-" nmap <C-k> :m -2<CR>
-" vmap <C-j> :m +1<CR>gv
-" vmap <C-k> :m -2<CR>gv
-" imap <C-j> <Esc>:m +1<CR>gi
-" imap <C-k> <Esc>:m -2<CR>gi
-
-
-" vmap <C-j> :m'>+<CR>gv
-" imap <C-j> <Esc>:m+<CR>==gi
-
-" imap <C-k> <Esc>:m-2<CR>==gi
-" vmap <C-k> :m-2<CR>gv
-" nmap <C-j> :m+<CR>==
-" nmap <C-k> :m-2<CR>==
-
+" 上下移动
 nmap <C-j> :m+<CR>==
 nmap <C-k> :m-2<CR>==
 imap <C-j> <Esc>:m+<CR>==gi
 imap <C-k> <Esc>:m-2<CR>==gi
 vmap <C-j> :m'>+<CR>gv
 vmap <C-k> :m-2<CR>gv
+" 左右缩进
+nmap <tab> V>
+nmap <s-tab> V<
+vmap <tab> >gv
+vmap <s-tab> <gv
+
+" for leader shortcut
+nmap <Leader>q :q<CR>
+nmap <Leader>w :w<CR>
+nmap <Leader>g :NERDTreeToggle<CR>
+nmap <Leader>n :noh<CR>
+
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_start_word_key      = '<A-n>'
+let g:multi_cursor_select_all_word_key = '<A-m>'
+let g:multi_cursor_start_key           = 'g<C-n>'
+let g:multi_cursor_select_all_key      = 'g<A-m>'
+let g:multi_cursor_next_key            = '<A-n>'
+let g:multi_cursor_prev_key            = '<A-p>'
+let g:multi_cursor_skip_key            = '<A-x>'
+
+let g:NERDTreeMapActivateNode='l'
+let g:multi_cursor_quit_key            = '<Esc>'
+let g:NERDTreeMapJumpParent='h'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
