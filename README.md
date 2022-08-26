@@ -20,7 +20,7 @@ It's my clion settings
 open clion --> File --> improt setting 
 Select the .zip file and open it.
 
-**Note**: It's also nice to use default theme  and `sublime text` keymap. 
+Attention: For windows user, the path of the keymap.xml is different. So users need to modify it manually.
 
 ## 2. rvctools.zip
 

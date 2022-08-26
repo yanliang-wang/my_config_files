@@ -14,7 +14,7 @@ set de=on
 set ideajoin
 
 let mapleader=" "
-set so=3
+set so=5
 
 " plugins"
 set easymotion
@@ -43,6 +43,9 @@ nmap <s-tab> V<
 vmap <tab> >gv
 vmap <s-tab> <gv
 
+"vmap <c-v>
+imap <c-v>
+
 " for leader shortcut
 nmap <Leader>q :q<CR>
 nmap <Leader>w :w<CR>
@@ -52,6 +55,7 @@ nmap <Leader>n :noh<CR>
 
 let g:multi_cursor_use_default_mapping=0
 let g:multi_cursor_start_word_key      = '<A-n>'
+"使用ide的ctrl-f2来代替"
 let g:multi_cursor_select_all_word_key = '<A-m>'
 let g:multi_cursor_start_key           = 'g<C-n>'
 let g:multi_cursor_select_all_key      = 'g<A-m>'
