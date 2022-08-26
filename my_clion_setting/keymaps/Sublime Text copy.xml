@@ -1,0 +1,6 @@
+<keymap version="1" name="Sublime Text copy" parent="Sublime Text">
+  <action id="CollapseAllRegions">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl 1" />
+    <keyboard-shortcut first-keystroke="shift ctrl minus" />
+  </action>
+</keymap>

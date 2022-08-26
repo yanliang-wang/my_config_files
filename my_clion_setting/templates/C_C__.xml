@@ -1,0 +1,17 @@
+<templateSet group="C/C++">
+  <template name="main" value="#include &lt;iostream&gt;&#10;&#10;using namespace std;&#10;int main()&#10;{&#10;    $END$&#10;    return 0;&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="cout" value="std::cout&lt;&lt; $END$ &lt;&lt;std::endl;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="main code" value="#include &lt;bits/stdc++.h&gt;&#10;// #include &lt;dbg.h&gt;&#10;using namespace std;&#10;&#10;int main(int argc, char const *argv[]) {&#10;  $END$&#10;  return 0;&#10;}" description="template code for leetcode" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+</templateSet>

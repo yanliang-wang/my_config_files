@@ -1,0 +1,15 @@
+<application>
+  <component name="FileTypeManager" version="18">
+    <extensionMap>
+      <mapping pattern="GetDropPoint" type="AUTO_DETECTED" />
+      <mapping pattern="*.cmake.in" type="CMakeLists.txt" />
+      <mapping pattern="truck_segmentation" type="ObjectiveC" />
+      <mapping ext="pde" type="ObjectiveC" />
+      <mapping pattern="Common_words" type="PLAIN_TEXT" />
+      <mapping pattern="Common_words.txt" type="PLAIN_TEXT" />
+      <mapping pattern=".launch" type="XML" />
+      <removed_mapping ext="msg" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping pattern=".launch" approved="true" type="roslaunch" />
+    </extensionMap>
+  </component>
+</application>

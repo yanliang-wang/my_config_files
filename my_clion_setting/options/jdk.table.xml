@@ -1,0 +1,180 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="1.8" />
+      <type value="JavaSDK" />
+      <version value="java version &quot;1.8.0_92&quot;" />
+      <homePath value="C:/Program Files/Java/jdk1.8.0_92" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/charsets.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/deploy.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/access-bridge-64.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/cldrdata.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/dnsns.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/jaccess.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/jfxrt.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/localedata.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/nashorn.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/sunec.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/sunjce_provider.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/sunmscapi.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/sunpkcs11.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/zipfs.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/javaws.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/jce.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/jfr.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/jfxswt.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/jsse.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/management-agent.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/plugin.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/resources.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/lib/tools.jar!/" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite">
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/src.zip!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/" type="simple" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="IDEA jdk" />
+      <type value="JavaSDK" />
+      <version value="java version &quot;1.8.0_92&quot;" />
+      <homePath value="C:/Program Files/Java/jdk1.8.0_92" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/charsets.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/deploy.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/access-bridge-64.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/cldrdata.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/dnsns.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/jaccess.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/jfxrt.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/localedata.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/nashorn.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/sunec.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/sunjce_provider.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/sunmscapi.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/sunpkcs11.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/ext/zipfs.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/javaws.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/jce.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/jfr.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/jfxswt.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/jsse.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/management-agent.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/plugin.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/resources.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/lib/tools.jar!/" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite">
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/src.zip!/" type="simple" />
+            <root url="jar://$USER_HOME$/C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/" type="simple" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.5" />
+      <type value="Python SDK" />
+      <version value="Python 3.5.2" />
+      <homePath value="/usr/bin/python3.5" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file:///usr/lib/python3.5" type="simple" />
+            <root url="file:///usr/lib/python3.5/plat-x86_64-linux-gnu" type="simple" />
+            <root url="file:///usr/lib/python3.5/lib-dynload" type="simple" />
+            <root url="file://$USER_HOME$/.local/lib/python3.5/site-packages" type="simple" />
+            <root url="file:///usr/local/lib/python3.5/dist-packages" type="simple" />
+            <root url="file:///usr/lib/python3/dist-packages" type="simple" />
+            <root url="file://$USER_HOME$/.CLion2019.3/system/python_stubs/-1247971764" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.17" />
+      <homePath value="/usr/bin/python2.7" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file:///usr/lib/python2.7" type="simple" />
+            <root url="file:///usr/lib/python2.7/plat-x86_64-linux-gnu" type="simple" />
+            <root url="file:///usr/lib/python2.7/lib-tk" type="simple" />
+            <root url="file:///usr/lib/python2.7/lib-dynload" type="simple" />
+            <root url="file://$USER_HOME$/.local/lib/python2.7/site-packages" type="simple" />
+            <root url="file:///usr/local/lib/python2.7/dist-packages" type="simple" />
+            <root url="file:///usr/lib/python2.7/dist-packages" type="simple" />
+            <root url="file:///usr/lib/python2.7/dist-packages/gtk-2.0" type="simple" />
+            <root url="file:///usr/lib/python2.7/dist-packages/wx-3.0-gtk3" type="simple" />
+            <root url="file://$USER_HOME$/.cache/JetBrains/CLion2020.3/python_stubs/-1247972723" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stdlib/2" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/third_party/2" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7 (2)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.17" />
+      <homePath value="/usr/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file:///usr/lib/python2.7" type="simple" />
+            <root url="file:///usr/lib/python2.7/plat-x86_64-linux-gnu" type="simple" />
+            <root url="file:///usr/lib/python2.7/lib-tk" type="simple" />
+            <root url="file:///usr/lib/python2.7/lib-dynload" type="simple" />
+            <root url="file://$USER_HOME$/.local/lib/python2.7/site-packages" type="simple" />
+            <root url="file:///usr/local/lib/python2.7/dist-packages" type="simple" />
+            <root url="file:///usr/lib/python2.7/dist-packages" type="simple" />
+            <root url="file:///usr/lib/python2.7/dist-packages/gtk-2.0" type="simple" />
+            <root url="file:///usr/lib/python2.7/dist-packages/wx-3.0-gtk3" type="simple" />
+            <root url="file://$USER_HOME$/.cache/JetBrains/CLion2020.3/python_stubs/348993582" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stdlib/2" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/third_party/2" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+  </component>
+</application>

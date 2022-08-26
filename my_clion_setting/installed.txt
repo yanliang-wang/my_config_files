@@ -1,0 +1,10 @@
+AceJump
+IdeaVIM
+IdeaVimExtension
+club.nutsoft.Github3Theme
+com.github.dankinsoid.multicursor
+com.intellij.ideolog
+com.intellij.plugins.vscodekeymap
+com.nasller.CodeGlancePro
+edu.umontreal.hatchery
+org.jetbrains.IdeaVim-EasyMotion
