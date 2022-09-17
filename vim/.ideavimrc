@@ -4,7 +4,8 @@ set number relativenumber
 " keep normal mode when refactor
 set idearefactormode=keep
 " 中英文切换
-set keep-english-in-normal
+" set keep-english-in-normal
+set keep-english-in-normal-and-restore-in-insert
 " 搜索高亮
 set hlsearch
 set incsearch

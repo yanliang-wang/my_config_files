@@ -20,6 +20,13 @@
   <action id="CIDR.Debugger.CopyAddress">
     <keyboard-shortcut first-keystroke="shift alt c" />
   </action>
+  <action id="CMake.ReloadCMakeProject">
+    <keyboard-shortcut first-keystroke="ctrl alt r" />
+  </action>
+  <action id="ChooseRunConfiguration">
+    <keyboard-shortcut first-keystroke="shift alt f10" />
+    <keyboard-shortcut first-keystroke="shift ctrl f5" />
+  </action>
   <action id="CloseAllEditors" />
   <action id="CloseProject" />
   <action id="CollapseAllRegions">
@@ -43,6 +50,10 @@
   <action id="DatabaseView.CopyDdlAction">
     <keyboard-shortcut first-keystroke="shift ctrl alt g" />
   </action>
+  <action id="DatabaseView.ForceRefresh" />
+  <action id="Diff.ApplyLeftSide" />
+  <action id="DuplicatesForm.SendToLeft" />
+  <action id="DuplicatesForm.SendToRight" />
   <action id="EditSourceInNewWindow" />
   <action id="Editor Copy">
     <keyboard-shortcut first-keystroke="shift ctrl c" />
@@ -58,12 +69,6 @@
   <action id="EditorScrollDown">
     <keyboard-shortcut first-keystroke="ctrl down" />
   </action>
-  <action id="EditorScrollLeft">
-    <keyboard-shortcut first-keystroke="ctrl left" />
-  </action>
-  <action id="EditorScrollRight">
-    <keyboard-shortcut first-keystroke="ctrl right" />
-  </action>
   <action id="EditorScrollUp">
     <keyboard-shortcut first-keystroke="ctrl up" />
   </action>
@@ -75,6 +80,13 @@
     <keyboard-shortcut first-keystroke="ctrl equals" />
   </action>
   <action id="ExpandRegionRecursively" />
+  <action id="FileChooser.GotoHome" />
+  <action id="FileChooser.GotoProject" />
+  <action id="FileChooser.LightEditGotoOpenedFile">
+    <keyboard-shortcut first-keystroke="shift ctrl alt q" />
+  </action>
+  <action id="FileChooser.NewFile" />
+  <action id="ForceRefresh" />
   <action id="Forward">
     <mouse-shortcut keystroke="button5" />
   </action>
@@ -82,6 +94,9 @@
     <keyboard-shortcut first-keystroke="f2" />
   </action>
   <action id="GotoBookmark0" />
+  <action id="GotoBookmark1" />
+  <action id="GotoBookmark2" />
+  <action id="GotoBookmark9" />
   <action id="GotoNextError">
     <keyboard-shortcut first-keystroke="f8" />
     <keyboard-shortcut first-keystroke="f2" />
@@ -108,21 +123,24 @@
     <keyboard-shortcut first-keystroke="ctrl k" />
   </action>
   <action id="MoveTabRight" />
-  <action id="NextSplitter" />
-  <action id="NextTab">
-    <keyboard-shortcut first-keystroke="ctrl page_down" />
+  <action id="NewDir">
+    <keyboard-shortcut first-keystroke="alt n" />
+  </action>
+  <action id="NewFile">
+    <keyboard-shortcut first-keystroke="ctrl n" />
+  </action>
+  <action id="NextSplitter">
     <keyboard-shortcut first-keystroke="alt right" />
   </action>
   <action id="OpenFile">
     <keyboard-shortcut first-keystroke="ctrl o" />
     <keyboard-shortcut first-keystroke="shift ctrl n" />
   </action>
-  <action id="PrevSplitter" />
-  <action id="PreviousTab">
-    <keyboard-shortcut first-keystroke="ctrl page_up" />
+  <action id="PrevSplitter">
     <keyboard-shortcut first-keystroke="alt left" />
   </action>
   <action id="QuickChangeScheme" />
+  <action id="RecentFiles" />
   <action id="Refactorings.QuickListPopupAction" />
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="shift alt f" />
@@ -138,8 +156,24 @@
   <action id="SaveAll" />
   <action id="ScrollPane-unitScrollDown" />
   <action id="ScrollPane-unitScrollUp" />
+  <action id="Terminal.CopySelectedText">
+    <keyboard-shortcut first-keystroke="ctrl c" />
+    <keyboard-shortcut first-keystroke="ctrl insert" />
+    <keyboard-shortcut first-keystroke="shift ctrl c" />
+  </action>
+  <action id="Terminal.NextSplitter">
+    <keyboard-shortcut first-keystroke="alt right" />
+  </action>
+  <action id="Terminal.Paste">
+    <keyboard-shortcut first-keystroke="ctrl v" />
+    <keyboard-shortcut first-keystroke="shift insert" />
+    <keyboard-shortcut first-keystroke="shift ctrl v" />
+  </action>
   <action id="TerminalDecreaseFontSize" />
   <action id="TerminalIncreaseFontSize" />
+  <action id="TerminalSplitActionBase$Vertical">
+    <keyboard-shortcut first-keystroke="ctrl 2" />
+  </action>
   <action id="ToggleZenMode" />
   <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleCodeSpanAction" />
 </keymap>

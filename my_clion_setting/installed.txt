@@ -3,8 +3,10 @@ IdeaVIM
 IdeaVimExtension
 club.nutsoft.Github3Theme
 com.github.dankinsoid.multicursor
+com.github.lppedd.idea-conventional-commit
 com.intellij.ideolog
 com.intellij.plugins.vscodekeymap
+com.linuxgods.kreiger.idea.statusbar.filename
 com.nasller.CodeGlancePro
 edu.umontreal.hatchery
 org.jetbrains.IdeaVim-EasyMotion
