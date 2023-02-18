@@ -53,12 +53,15 @@ set noswapfile
 set incsearch 
 " 搜索高亮 键入:noh取消高亮
 set hlsearch 
+" 搜索默认忽略大小写 , \c (忽略大小写) \C (不忽略大小写)
+set ignorecase
 " 搜索到文件两端时不重新搜索  
 "set nowrapscan  
 
 " encoding setting
 set enc=utf-8  
 set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936 
+"vmap p "_dp
 
 set so=3
 set tabstop=4
