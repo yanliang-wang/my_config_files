@@ -96,16 +96,26 @@ alias tree1='tree -L 1'
 alias tree2='tree -L 2'
 alias pip2='/usr/bin/pip'
 alias -s pdf='okular'
-alias cm='catkin_make'
-alias cb='catkin build'
+alias cm='catkin_make -j 16'
+alias cb='catkin build -j 16'
 alias cmall='catkin_make -DCATKIN_WHITELIST_PACKAGES=""'
 alias refresh='watch -n 0.5 -d'
 alias ins='sudo apt-get install'
 alias doxgui='doxywizard'
 alias jn='jupyter notebook'
-alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5 --right-of HDMI-0 --auto' # 初始屏幕
+# alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5 --right-of HDMI-0 --auto' # 初始屏幕
+#alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5  --rotate left  --right-of HDMI-0 --auto' # 右屏幕旋转
+alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5  --rotate left  --right-of HDMI-0 --auto && xrandr --output HDMI-0 --auto --pos 0x370 --output DP-5 --pos 1920x0' # 右屏幕旋转
+alias qq='sh /opt/deepinwine/apps/Deepin-QQ/run.sh'
 alias di='sudo dpkg -i'
-alias clion=' nohup sh /home/wang/wang/software/clion-2021.3.2/bin/clion.sh  &'
+alias clion=' nohup sh /home/wang/wang/software/clion-2022.1.1/bin/clion.sh  &'
+alias cfw=' nohup sh /home/wang/wang/software/VPN/clash/Clash\ for\ Windows-0.18.9-x64-linux/cfw.sh  &'
+alias t='tmux'
+alias ta='tmux attach '
+alias tat='tmux attach -t '
+alias ts='tmux switch '
+alias tn='tmux new '
+alias td='tmux detach '
 
 CZ_INIT_SCRIPT='var p=require("./package.json");p.config=p.config||{};p.version="0.0.0";p.config.ghooks={"commit-msg":"validate-commit-msg"};p.scripts=p.scripts||{};p.scripts.changelog="conventional-changelog -p angular -i CHANGELOG.md -s -r 0 -u";p.scripts.release="release-it --npm.skipChecks --no-git.requireCleanWorkingDir --no-publish --no-git.push --no-git.commit";require("fs").writeFileSync("./package.json",JSON.stringify(p,null,2)+require("os").EOL);'
 # alias cz_init="npm init && commitizen init cz-conventional-changelog --save-dev --save-exact && node -e '$CZ_INIT_SCRIPT'"
@@ -117,7 +127,7 @@ alias release="npm run release"
 #####################################################################
 # open file configure
 #####################################################################
-alias -s py='vim'      # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
+# alias -s py='vim'      # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
 alias -s c='vim'
 alias -s cpp='vim'
 alias -s txt='gedit'
@@ -232,3 +242,12 @@ export LD_PATH_LIB=/opt/ros/melodic/lib
 
 # pr
 # export LDFLAGS="-fno-lto"
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+stty -ixon
+
+export MANPATH=${MANPATH}:/usr/local/texlive/2022/texmf-dist/doc/man/
+export INFOPATH=${INFOPATH}:/usr/local/texlive/2022/texmf-dist/doc/info/
+export PATH=${PATH}:/usr/local/texlive/2022/bin/x86_64-linux/
+

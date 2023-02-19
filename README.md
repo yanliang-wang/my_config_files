@@ -51,11 +51,8 @@ sudo apt install fasd
 ### how to use it
 
 ```bash
-mv ~/.zshrc  ~/.zshrc.backup
-cp .zshrc ~/.zshrc 
-source  ~/.zshrc
+ln -s /home/wang/wang/git_files/my_config_files/zsh/.zshrc /home/wang/.zshrc
 ```
-
 
 ## 4. tmux
 
