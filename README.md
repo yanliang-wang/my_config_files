@@ -78,6 +78,9 @@ These are my `.vimrc` and `.ideavimrc` file with many custom configuration inclu
 ### how to use `.vimrc`
 
 ```bash
+# 配置插件管理器
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 ln -s /home/wang/wang/git_files/my_config_files/vim/.vimrc /home/wang/.vimrc
 ```
 > 安装插件 `:PlugInstall`
