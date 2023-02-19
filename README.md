@@ -2,13 +2,18 @@ These are my config files.
 
 # my_config_files
 
-- [my_config_files](#my_config_files)
-  - [1. my_clion_setting.zip](#1-my_clion_settingzip)
+- [my\_config\_files](#my_config_files)
+  - [1. my\_clion\_setting.zip](#1-my_clion_settingzip)
     - [how to use it](#how-to-use-it)
   - [2. rvctools.zip](#2-rvctoolszip)
     - [how to use it](#how-to-use-it-1)
   - [3. .zshrc](#3-zshrc)
     - [how to use it](#how-to-use-it-2)
+  - [4. tmux](#4-tmux)
+    - [how to use it](#how-to-use-it-3)
+  - [5. vim](#5-vim)
+    - [how to use `.vimrc`](#how-to-use-vimrc)
+    - [how to use `.ideavimrc`](#how-to-use-ideavimrc)
 
 
 ## 1. my_clion_setting.zip
@@ -50,6 +55,41 @@ mv ~/.zshrc  ~/.zshrc.backup
 cp .zshrc ~/.zshrc 
 source  ~/.zshrc
 ```
+
+
+## 4. tmux
+
+It's my `.tmux.conf` file with many custom configuration including plugins, etc.
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm # 安装插件管理器
+```
+
+### how to use it
+
+```bash
+ln -s /home/wang/wang/git_files/my_config_files/tmux/.tmux.conf /home/wang/.tmux.conf
+tmux new -s test
+```
+> `prefix+I`安装插件
+
+
+## 5. vim
+
+These are my `.vimrc` and `.ideavimrc` file with many custom configuration including plugins, etc.
+
+### how to use `.vimrc`
+
+```bash
+ln -s /home/wang/wang/git_files/my_config_files/vim/.vimrc /home/wang/.vimrc
+```
+> 安装插件 `:PlugInstall`
+> 查看插件状态`:PlugStatus`
+
+### how to use `.ideavimrc`
+
+复制替换`.ideavimrc`即可
+
 
 
 
