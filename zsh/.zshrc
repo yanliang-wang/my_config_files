@@ -48,7 +48,7 @@ ZSH_THEME="ys"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git)
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -103,9 +103,9 @@ alias refresh='watch -n 0.5 -d'
 alias ins='sudo apt-get install'
 alias doxgui='doxywizard'
 alias jn='jupyter notebook'
-# alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5 --right-of HDMI-0 --auto' # 初始屏幕
+alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5 --right-of HDMI-0 --auto' # 初始屏幕
 #alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5  --rotate left  --right-of HDMI-0 --auto' # 右屏幕旋转
-alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5  --rotate left  --right-of HDMI-0 --auto && xrandr --output HDMI-0 --auto --pos 0x370 --output DP-5 --pos 1920x0' # 右屏幕旋转
+# alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5  --rotate left  --right-of HDMI-0 --auto && xrandr --output HDMI-0 --auto --pos 0x370 --output DP-5 --pos 1920x0' # 右屏幕旋转
 alias qq='sh /opt/deepinwine/apps/Deepin-QQ/run.sh'
 alias di='sudo dpkg -i'
 alias clion=' nohup sh /home/wang/wang/software/clion-2022.1.1/bin/clion.sh  &'
@@ -250,4 +250,5 @@ stty -ixon
 export MANPATH=${MANPATH}:/usr/local/texlive/2022/texmf-dist/doc/man/
 export INFOPATH=${INFOPATH}:/usr/local/texlive/2022/texmf-dist/doc/info/
 export PATH=${PATH}:/usr/local/texlive/2022/bin/x86_64-linux/
+
 
