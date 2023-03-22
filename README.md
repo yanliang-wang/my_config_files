@@ -22,8 +22,9 @@ It's my clion settings
 
 ### how to use it
 
-open clion --> File --> improt setting 
+- open clion --> File --> improt setting 
 Select the .zip file and open it.
+- select the `my_vscode_keymap` in keymap setting
 
 Attention: For windows user, the path of the keymap.xml is different. So users need to modify it manually.
 
