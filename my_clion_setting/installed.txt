@@ -9,4 +9,5 @@ com.intellij.plugins.vscodekeymap
 com.linuxgods.kreiger.idea.statusbar.filename
 com.nasller.CodeGlancePro
 edu.umontreal.hatchery
+eu.theblob42.idea.whichkey
 org.jetbrains.IdeaVim-EasyMotion

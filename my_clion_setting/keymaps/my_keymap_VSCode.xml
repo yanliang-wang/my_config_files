@@ -46,6 +46,7 @@
   </action>
   <action id="CopyPaths">
     <keyboard-shortcut first-keystroke="shift alt c" />
+    <keyboard-shortcut first-keystroke="alt c" />
   </action>
   <action id="DatabaseView.CopyDdlAction">
     <keyboard-shortcut first-keystroke="shift ctrl alt g" />
@@ -84,6 +85,7 @@
   <action id="FileChooser.GotoProject" />
   <action id="FileChooser.LightEditGotoOpenedFile">
     <keyboard-shortcut first-keystroke="shift ctrl alt q" />
+    <keyboard-shortcut first-keystroke="i" />
   </action>
   <action id="FileChooser.NewFile" />
   <action id="ForceRefresh" />
@@ -130,13 +132,22 @@
     <keyboard-shortcut first-keystroke="ctrl n" />
   </action>
   <action id="NextSplitter">
+    <keyboard-shortcut first-keystroke="alt l" />
+  </action>
+  <action id="NextTab">
+    <keyboard-shortcut first-keystroke="ctrl page_down" />
     <keyboard-shortcut first-keystroke="alt right" />
   </action>
   <action id="OpenFile">
     <keyboard-shortcut first-keystroke="ctrl o" />
     <keyboard-shortcut first-keystroke="shift ctrl n" />
   </action>
+  <action id="PopupHector" />
   <action id="PrevSplitter">
+    <keyboard-shortcut first-keystroke="alt h" />
+  </action>
+  <action id="PreviousTab">
+    <keyboard-shortcut first-keystroke="ctrl page_up" />
     <keyboard-shortcut first-keystroke="alt left" />
   </action>
   <action id="QuickChangeScheme" />
@@ -156,21 +167,35 @@
   <action id="SaveAll" />
   <action id="ScrollPane-unitScrollDown" />
   <action id="ScrollPane-unitScrollUp" />
+  <action id="ShowUmlDiagram">
+    <keyboard-shortcut first-keystroke="shift ctrl alt u" />
+    <keyboard-shortcut first-keystroke="shift ctrl alt h" />
+  </action>
   <action id="Terminal.CopySelectedText">
     <keyboard-shortcut first-keystroke="ctrl c" />
     <keyboard-shortcut first-keystroke="ctrl insert" />
     <keyboard-shortcut first-keystroke="shift ctrl c" />
   </action>
   <action id="Terminal.NextSplitter">
-    <keyboard-shortcut first-keystroke="alt right" />
+    <keyboard-shortcut first-keystroke="alt l" />
   </action>
   <action id="Terminal.Paste">
     <keyboard-shortcut first-keystroke="ctrl v" />
     <keyboard-shortcut first-keystroke="shift insert" />
     <keyboard-shortcut first-keystroke="shift ctrl v" />
   </action>
+  <action id="Terminal.PrevSplitter">
+    <keyboard-shortcut first-keystroke="alt h" />
+  </action>
+  <action id="Terminal.SwitchFocusToEditor">
+    <keyboard-shortcut first-keystroke="escape" />
+    <keyboard-shortcut first-keystroke="ctrl alt e" />
+  </action>
   <action id="TerminalDecreaseFontSize" />
   <action id="TerminalIncreaseFontSize" />
+  <action id="TerminalSplitActionBase$Horizontal">
+    <keyboard-shortcut first-keystroke="ctrl 1" />
+  </action>
   <action id="TerminalSplitActionBase$Vertical">
     <keyboard-shortcut first-keystroke="ctrl 2" />
   </action>

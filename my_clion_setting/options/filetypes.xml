@@ -7,6 +7,7 @@
       <mapping ext="pde" type="ObjectiveC" />
       <mapping pattern="Common_words" type="PLAIN_TEXT" />
       <mapping pattern="Common_words.txt" type="PLAIN_TEXT" />
+      <mapping ext="srv" type="PLAIN_TEXT" />
       <mapping pattern=".launch" type="XML" />
       <mapping ext="urdf" type="XML" />
       <mapping ext="gazebo" type="XML" />
