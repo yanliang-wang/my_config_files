@@ -51,8 +51,32 @@ nmap <s-tab> V<
 vmap <tab> >gv
 vmap <s-tab> <gv
 
+" 复制粘贴
+set clipboard=unnamed
+" 从系统clipboard中粘贴
+nmap <Leader>y "+y
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>y "+y
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+" 删除的元素不覆盖
+vnoremap p "_dp
+
+nnoremap x "_x
+nnoremap X "_X
+vnoremap x "_x
+vnoremap X "_X
+
+" nnoremap d "_d
+" nnoremap dd "_dd
+" nnoremap D "_D
+"vnoremap d "_d
+"vnoremap dd "_dd
+
 "vmap <c-v>
-imap <c-v>
+" imap <c-v>
 "vmap p "dp
 
 " use H and L for beginning/end line
@@ -201,3 +225,4 @@ vmap <leader>ef <action>(IntroduceField)
 " extract variable
 vmap <leader>ev <action>(IntroduceVariable)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set clipboard+=ideaput

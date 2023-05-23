@@ -84,6 +84,12 @@ These are my `.vimrc` and `.ideavimrc` file with many custom configuration inclu
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ln -s /home/wang/wang/git_files/my_config_files/vim/.vimrc /home/wang/.vimrc
+
+# 检查是否支持clipboard
+vim --version | grep clipboard # 已经支持时其前有+号
+
+  # 如果不支持需要安装vim-gtk
+sudo apt install vim-gtk
 ```
 > 安装插件 `:PlugInstall`
 > 查看插件状态`:PlugStatus`

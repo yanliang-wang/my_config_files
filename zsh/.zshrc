@@ -96,19 +96,18 @@ alias tree1='tree -L 1'
 alias tree2='tree -L 2'
 alias pip2='/usr/bin/pip'
 alias -s pdf='okular'
-alias cm='catkin_make -j 16'
-alias cb='catkin build -j 16'
 alias cmall='catkin_make -DCATKIN_WHITELIST_PACKAGES=""'
 alias refresh='watch -n 0.5 -d'
 alias ins='sudo apt-get install'
 alias doxgui='doxywizard'
 alias jn='jupyter notebook'
-alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5 --right-of HDMI-0 --auto' # 初始屏幕
+alias wechat_two='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5 --right-of HDMI-0 --auto' # 初始屏幕
+alias wechat='sh /opt/deepinwine/apps/Deepin-WeChat/run.sh' # 初始屏幕
 #alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5  --rotate left  --right-of HDMI-0 --auto' # 右屏幕旋转
 # alias wechat='xrandr --output DP-5 --off && sh /opt/deepinwine/apps/Deepin-WeChat/run.sh && sleep 1 &&  xrandr --output DP-5  --rotate left  --right-of HDMI-0 --auto && xrandr --output HDMI-0 --auto --pos 0x370 --output DP-5 --pos 1920x0' # 右屏幕旋转
 alias qq='sh /opt/deepinwine/apps/Deepin-QQ/run.sh'
 alias di='sudo dpkg -i'
-alias clion=' nohup sh /home/wang/wang/software/clion-2022.1.1/bin/clion.sh  &'
+alias clion=' nohup sh /home/wang/wang/software/clion-2021.3.2/bin/clion.sh  &'
 alias cfw=' nohup sh /home/wang/wang/software/VPN/clash/Clash\ for\ Windows-0.18.9-x64-linux/cfw.sh  &'
 alias t='tmux'
 alias ta='tmux attach '
@@ -191,9 +190,8 @@ source /usr/share/autojump/autojump.zsh
 # ros configure
 #####################################################################
 # ros tmp cmd
-source /opt/ros/melodic/setup.zsh
+# source /opt/ros/melodic/setup.zsh
 alias echorospath='echo $ROS_PACKAGE_PATH'
-alias sourcerosws='source devel/setup.zsh'
 alias killrosgz='pkill gz && pkill rosmaster'
 # export  TURTLEBOT_BASE=kobuki  
 # export  TURTLEBOT_STACKS=hexagons
@@ -251,4 +249,13 @@ export MANPATH=${MANPATH}:/usr/local/texlive/2022/texmf-dist/doc/man/
 export INFOPATH=${INFOPATH}:/usr/local/texlive/2022/texmf-dist/doc/info/
 export PATH=${PATH}:/usr/local/texlive/2022/bin/x86_64-linux/
 
+# >>> fishros initialize >>>
+# echo "ros:eloquent(1) melodic(2) ?"
+# read choose
+# case $choose in
+# 1) source  /opt/ros/eloquent/setup.zsh; alias sourcerosws='source install/setup.zsh'; alias cb='colcon build';;
+# 2) source  /opt/ros/melodic/setup.zsh; alias sourcerosws='source devel/setup.zsh'; alias cm='catkin_make -j 12'; alias cb='catkin build -j 12';;
+# esac
+# <<< fishros initialize <<<
+source  /opt/ros/melodic/setup.zsh; alias sourcerosws='source devel/setup.zsh'; alias cm='catkin_make -j 12'; alias cb='catkin build -j 12';
 

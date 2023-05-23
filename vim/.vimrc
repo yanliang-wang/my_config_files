@@ -67,6 +67,11 @@ set so=3
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" mouse vim and tmux 在vim时关闭tmux鼠标
+set ttymouse=xterm2
+set mouse=a
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -84,6 +89,30 @@ nmap <tab> V>
 nmap <s-tab> V<
 vmap <tab> >gv
 vmap <s-tab> <gv
+
+" 复制粘贴
+set clipboard=unnamed
+" 从系统clipboard中粘贴
+nnoremap <Leader>p "+p
+nnoremap <Leader>y "+y
+nnoremap <Leader>P "+P
+vnoremap <Leader>y "+y
+vnoremap <Leader>p "+p
+vnoremap <Leader>P "+P
+
+" 删除的元素不覆盖
+vnoremap p "_dp
+
+nnoremap x "_x
+nnoremap X "_X
+vnoremap x "_x
+vnoremap X "_X
+
+" nnoremap d "_d
+" nnoremap dd "_dd
+" nnoremap D "_D
+"vnoremap d "_d
+"vnoremap dd "_dd
 
 " save
 nmap <C-S> :update<CR>
@@ -103,6 +132,7 @@ let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
 nmap <Leader>q :q<CR>
 nmap <Leader>w :w<CR>
+nmap <Leader>s :w<CR>
 nmap <Leader>g :NERDTreeToggle<CR>
 nmap <Leader>t :NERDTree<CR>
 nmap <Leader>f :NERDTreeFind<CR>
