@@ -111,7 +111,7 @@ alias clion=' nohup sh /home/wang/wang/software/clion-2021.3.2/bin/clion.sh  &'
 alias cfw=' nohup sh /home/wang/wang/software/VPN/clash/Clash\ for\ Windows-0.18.9-x64-linux/cfw.sh  &'
 alias t='tmux'
 alias ta='tmux attach '
-alias tat='tmux attach -t '
+alias tat='tmux attach -t'
 alias ts='tmux switch '
 alias tn='tmux new '
 alias td='tmux detach '
@@ -258,4 +258,12 @@ export PATH=${PATH}:/usr/local/texlive/2022/bin/x86_64-linux/
 # esac
 # <<< fishros initialize <<<
 source  /opt/ros/melodic/setup.zsh; alias sourcerosws='source devel/setup.zsh'; alias cm='catkin_make -j 12'; alias cb='catkin build -j 12';
+
+# 设置打开终端时使用tmux
+# [[ $TERM != "screen" ]] && exec tmux
+#if [ -z "$TMUX" ]; then
+    # tmux attach -t default || tmux new -s default
+#    tmux
+#fi
+
 
