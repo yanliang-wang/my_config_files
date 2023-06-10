@@ -14,6 +14,7 @@ These are my config files.
   - [5. vim](#5-vim)
     - [how to use `.vimrc`](#how-to-use-vimrc)
     - [how to use `.ideavimrc`](#how-to-use-ideavimrc)
+  - [6. ranger](#6-ranger)
 
 
 ## 1. my_clion_setting.zip
@@ -58,6 +59,8 @@ ln -s /home/wang/wang/git_files/my_config_files/zsh/.zshrc /home/wang/.zshrc
 
 ## 4. tmux
 
+> v3.0+ is recommended.
+
 It's my `.tmux.conf` file with many custom configuration including plugins, etc.
 
 ```bash
@@ -98,6 +101,17 @@ sudo apt install vim-gtk
 
 复制替换`.ideavimrc`即可
 
+## 6. ranger
+
+``` bash
+# To use the "Dragon drop", install the `https://github.com/mwh/dragon` firstly(just run `make install`).
+sudo ln $HOME/.local/bin/dragon /usr/bin/dragon
+```
+
+``` bash
+rm -rf $HOME/.config/ranger
+ln -s `pwd`/ranger $HOME/.config/ranger 
+```
 
 
 
