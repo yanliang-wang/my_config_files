@@ -269,9 +269,9 @@ alias clear_log="rm -rf /home/uto/.ros/log/*"
 
 # 设置打开终端时使用tmux
 # [[ $TERM != "screen" ]] && exec tmux
-#if [ -z "$TMUX" ]; then
+if [ -z "$TMUX" ]; then
     # tmux attach -t default || tmux new -s default
-#    tmux
-#fi
+    tmux
+fi
 
 
