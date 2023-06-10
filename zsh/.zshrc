@@ -259,6 +259,14 @@ export PATH=${PATH}:/usr/local/texlive/2022/bin/x86_64-linux/
 # <<< fishros initialize <<<
 source  /opt/ros/melodic/setup.zsh; alias sourcerosws='source devel/setup.zsh'; alias cm='catkin_make -j 12'; alias cb='catkin build -j 12';
 
+# ranger config
+alias r="ranger"
+
+# dragon drop
+export PATH=$PATH:/home/uto/.local/bin/
+export RANGER_LOAD_DEFAULT_RC=false
+alias clear_log="rm -rf /home/uto/.ros/log/*"
+
 # 设置打开终端时使用tmux
 # [[ $TERM != "screen" ]] && exec tmux
 #if [ -z "$TMUX" ]; then
