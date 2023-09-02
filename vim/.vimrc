@@ -133,8 +133,8 @@ let g:NERDTreeMapJumpParent='h'
 nmap <Leader>q :q<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>s :w<CR>
-nmap <Leader>g :NERDTreeToggle<CR>
-nmap <Leader>t :NERDTree<CR>
+nmap <Leader>t :NERDTreeToggle<CR>
+nmap <Leader>T :NERDTree<CR>
 nmap <Leader>f :NERDTreeFind<CR>
 nmap <Leader>n :noh<CR>
 
@@ -151,5 +151,11 @@ let g:multi_cursor_quit_key            = '<Esc>'
 
 " unset some key mapping from plugin
 unmap <C-i>
+
+" about windows 
+nmap <Leader>j <C-W>j
+nmap <Leader>k <C-W>k
+nmap <Leader>h <C-W>h
+nmap <Leader>l <C-W>l
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
