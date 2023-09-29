@@ -62,7 +62,7 @@ vmap <Leader>p "+p
 vmap <Leader>P "+P
 
 " 删除的元素不覆盖
-vnoremap p "_dp
+vnoremap p "_dP
 
 nnoremap x "_x
 nnoremap X "_X

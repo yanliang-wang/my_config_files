@@ -101,7 +101,7 @@ vnoremap <Leader>p "+p
 vnoremap <Leader>P "+P
 
 " 删除的元素不覆盖
-vnoremap p "_dp
+vnoremap p "_dP
 
 nnoremap x "_x
 nnoremap X "_X
@@ -132,7 +132,7 @@ let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
 nmap <Leader>q :q<CR>
 nmap <Leader>w :w<CR>
-nmap <Leader>s :w<CR>
+nmap <Leader>s <Leader><Leader>s
 nmap <Leader>t :NERDTreeToggle<CR>
 nmap <Leader>T :NERDTree<CR>
 nmap <Leader>f :NERDTreeFind<CR>
