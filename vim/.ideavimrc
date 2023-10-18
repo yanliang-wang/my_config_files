@@ -112,6 +112,12 @@ let g:NERDTreeMapActivateNode='l'
 let g:multi_cursor_quit_key            = '<Esc>'
 let g:NERDTreeMapJumpParent='h'
 
+" about windows 
+nmap <Leader>j <C-W>j
+nmap <Leader>k <C-W>k
+nmap <Leader>h <C-W>h
+nmap <Leader>l <C-W>l
+
 " ================================================================================================
 " = settings for actions =====================================
 " ================================================================================================

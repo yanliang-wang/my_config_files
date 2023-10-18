@@ -103,10 +103,10 @@ vnoremap <Leader>P "+P
 " 删除的元素不覆盖
 vnoremap p "_dP
 
-nnoremap x "_x
-nnoremap X "_X
-vnoremap x "_x
-vnoremap X "_X
+nnoremap <Leader>x "_x
+nnoremap <Leader>X "_X
+vnoremap <Leader>x "_x
+vnoremap <Leader>X "_X
 
 " nnoremap d "_d
 " nnoremap dd "_dd
