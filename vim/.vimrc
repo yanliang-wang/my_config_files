@@ -42,7 +42,8 @@ set number relativenumber
 set cursorline
 " set cursorcolumn
 
-setlocal foldmethod=syntax
+set nofoldenable
+set foldmethod=syntax
 
 " no backup (not producing ~ file)
 set noundofile
@@ -84,11 +85,11 @@ imap <C-j> <Esc>:m+<CR>==gi
 imap <C-k> <Esc>:m-2<CR>==gi
 vmap <C-j> :m'>+<CR>gv
 vmap <C-k> :m-2<CR>gv
-" 左右缩进
-nmap <tab> V>
-nmap <s-tab> V<
-vmap <tab> >gv
-vmap <s-tab> <gv
+" 左右缩进, 在xterm中tab和ctrl-i是一样的，所以想要用ctrl-i的话，就要取消tab的设置
+" nmap <tab> V>
+" nmap <s-tab> V<
+" vmap <tab> >gv
+" vmap <s-tab> <gv
 
 " 复制粘贴
 set clipboard=unnamed
@@ -131,6 +132,7 @@ imap <c-z> <c-o>:u<CR>
 let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
 nmap <Leader>q :q<CR>
+nmap <Leader><Leader>q :q!<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>s <Leader><Leader>s
 nmap <Leader>t :NERDTreeToggle<CR>
@@ -150,7 +152,7 @@ let g:multi_cursor_skip_key            = 'x'
 let g:multi_cursor_quit_key            = '<Esc>'
 
 " unset some key mapping from plugin
-unmap <C-i>
+" unmap <C-i>
 
 " about windows 
 nmap <Leader>j <C-W>j

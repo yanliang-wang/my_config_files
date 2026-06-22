@@ -15,6 +15,7 @@ These are my config files.
     - [how to use `.vimrc`](#how-to-use-vimrc)
     - [how to use `.ideavimrc`](#how-to-use-ideavimrc)
   - [6. ranger](#6-ranger)
+  - [7. yazi](#7-yazi)
 
 
 ## 1. my_clion_setting.zip
@@ -114,4 +115,11 @@ ln -s `pwd`/ranger $HOME/.config/ranger
 ```
 
 
+## 7. yazi
 
+These are my Yazi config files. Directories are opened with Dolphin, `o` reveals the selected file in Dolphin, and image preview/preload is disabled.
+
+``` bash
+rm -rf $HOME/.config/yazi
+ln -s `pwd`/yazi $HOME/.config/yazi
+```

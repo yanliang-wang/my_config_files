@@ -1,0 +1,4 @@
+[mgr]
+prepend_keymap = [
+	{ on = "o", run = 'shell "dolphin --select -- %s1" --orphan', desc = "Reveal in Dolphin" },
+]

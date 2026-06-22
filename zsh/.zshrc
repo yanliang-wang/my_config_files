@@ -94,6 +94,10 @@ alias smi='nvidia-smi'
 alias du1='sudo du -h --max-depth=1 --threshold=500M'
 alias tree1='tree -L 1'
 alias tree2='tree -L 2'
+alias tree3='tree -L 3'
+alias tree4='tree -L 4'
+alias tree5='tree -L 5'
+alias tree6='tree -L 6'
 alias pip2='/usr/bin/pip'
 alias -s pdf='okular'
 alias cmall='catkin_make -DCATKIN_WHITELIST_PACKAGES=""'
@@ -261,6 +265,7 @@ source  /opt/ros/melodic/setup.zsh; alias sourcerosws='source devel/setup.zsh'; 
 
 # ranger config
 alias r="ranger"
+alias y="yazi"
 
 # dragon drop
 export PATH=$PATH:/home/uto/.local/bin/

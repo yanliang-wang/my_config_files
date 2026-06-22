@@ -1,0 +1,45 @@
+[global_config]
+  title_inactive_bg_color = "#820f49"
+  inactive_color_offset = 1.0
+  enabled_plugins = CustomCommandsMenu, TestPlugin, ActivityWatch, TerminalShot, MavenPluginURLHandler
+  suppress_multiple_term_dialog = True
+  title_use_system_font = False
+[keybindings]
+  split_horiz = <Primary>1
+  split_vert = <Primary>2
+  close_term = None
+  close_window = None
+  hide_window = None
+  broadcast_all = None
+  edit_tab_title = None
+  layout_launcher = None
+[profiles]
+  [[default]]
+    background_color = "#2e2f31"
+    background_darkness = 0.99
+    cursor_color = "#eee8d5"
+    font = JetBrainsMono Nerd Font Bold 13
+    foreground_color = "#f3f0e7"
+    show_titlebar = False
+    scrollback_lines = 50000
+    use_system_font = False
+    copy_on_selection = True
+  [[New Profile]]
+[layouts]
+  [[default]]
+    
+    [[[child1]]]
+      
+      parent = window0
+      
+      profile = default
+      
+      type = Terminal
+    
+    [[[window0]]]
+      
+      parent = ""
+      
+      size = 700, 400
+      type = Window
+[plugins]
